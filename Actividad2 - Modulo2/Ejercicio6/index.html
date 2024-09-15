@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Descuentos en Viajes</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Calculadora de Descuento en Viajes Turísticos</h1>
+    <form id="formViaje">
+      <label for="origen">Ciudad de origen:</label><br>
+      <input type="text" id="origen" name="origen" value="La Palma" placeholder="Introduce tu ciudad"><br><br>
+
+      <label for="destino">Destino:</label><br>
+      <select id="destino" name="destino">
+        <option value="">Selecciona un destino</option>
+        <option value="Costa del Sol">La costa del Sol</option>
+        <option value="Panchimalco">Panchimalco</option>
+        <option value="Puerto el Triunfo">Puerto el Triunfo</option>+
+      </select><br><br>
+
+      <button type="submit">Calcular Descuento</button>
+    </form>
+
+    <h3 id="resultado"></h3>
+
+    <script src="script.js"></script>
+  </body>
+</html>
