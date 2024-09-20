@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Carrito de Compras Dinámico</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Agregar Productos</h2>
+        <form id="char">
+          <label for="idProduct">ID Código</label>
+          <input type="text" id="idProduct" required />
+
+          <label for="nameProduct">Nombre Producto</label>
+          <input type="text" id="nameProduct" required />
+
+          <label for="amount">Valor Unitario</label>
+          <input type="number" id="amount" required step="0.01" min="0" />
+
+          <label for="cant">Cantidad</label>
+          <input type="number" id="cant" required min="1" />
+
+          <input type="button" value="Agregar" onclick="agregar();" />
+        </form>
+      </section>
+
+      <section>
+        <h2>Productos Agregados</h2>
+        <table border="1" id="miTabla">
+          <thead>
+            <tr>
+              <th>ID Código</th>
+              <th>Nombre Producto</th>
+              <th>Valor Unitario</th>
+              <th>Cantidad</th>
+              <th>Total</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">Venta Total</td>
+              <td id="totalVenta">0.00</td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Tienda Virtual.</p>
+    </footer>
+  </body>
+</html>
