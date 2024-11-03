@@ -16,7 +16,14 @@ function esPalindromo($cadena) {
 
 // Probar la función esPalindromo con algunos ejemplos
 $frases = [
+    "Dábale arroz a la zorra el abad"
     "A man, a plan, a canal, Panama",
+    "Somos o no somos"
+    "Isaac no ronca así"
+    "Anita lava la tina"
+    "Luz azul"
+    "Yo hago yoga hoy"
+    "Ana lava lana"
     "No 'x' in Nixon",
     "Hello, World!",
     "Anita lava la tina"
