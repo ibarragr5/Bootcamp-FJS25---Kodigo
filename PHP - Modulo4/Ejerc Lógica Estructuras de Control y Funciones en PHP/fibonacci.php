@@ -3,17 +3,17 @@
 function generarFibonacci($n) {
     $fibonacci = [];
 
-    // Verificar si n es mayor o igual a 1 para agregar el primer término
+    // Verificar si n es mayor o igual a 1 para agregar el primer número
     if ($n >= 1) {
-        $fibonacci[] = 0; // Primer término de la serie
+        $fibonacci[] = 0; // Primer número de la serie
     }
 
-    // Verificar si n es mayor o igual a 2 para agregar el segundo término
+    // Verificar si n es mayor o igual a 2 para agregar el segundo número
     if ($n >= 2) {
-        $fibonacci[] = 1; // Segundo término de la serie
+        $fibonacci[] = 1; // Segundo número de la serie
     }
 
-    // Generar los términos restantes de la serie
+    // Generar los números restantes de la serie
     for ($i = 2; $i < $n; $i++) {
         // Cada término es la suma de los dos términos anteriores
         $fibonacci[] = $fibonacci[$i - 1] + $fibonacci[$i - 2];
@@ -24,9 +24,9 @@ function generarFibonacci($n) {
 }
 
 // Llamar a la función generarFibonacci con un valor de ejemplo y almacenar el resultado
-$n = 10; // Número de términos a generar
+$n = 10; // Cantidad de números a generar
 $fibonacciSeries = generarFibonacci($n);
 
-// Imprimir los términos generados
+// Imprimir los números generados
 echo "Los primeros $n términos de la serie Fibonacci son: " . implode(", ", $fibonacciSeries);
 ?>
